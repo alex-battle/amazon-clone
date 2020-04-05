@@ -35,7 +35,7 @@ body{
     text-decoration: none;
 }
 .header-links a:hover{
-    color: red;
+    color: orange;
 }
 .main{
     grid-area: main;
@@ -52,7 +52,7 @@ a {
     text-decoration: none;
 }
 a:hover{
-    color: red;
+    color: orange;
 }
 
 /* Home Screen */
@@ -94,4 +94,38 @@ a:hover{
 }
 .product-rating{
     margin-bottom: 1rem;
+}
+/* Side Bar */
+
+.brand button{
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #ffffffe9;
+    height: 100%;
+}
+.sidebar.open{
+    transform: translateX(0);
+}
+.sidebar-close-button{
+    border-radius: 50%;
+    border: .1rem black solid;
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: absolute;
+    right: .5rem;
+    top: 1.5rem;
 }
