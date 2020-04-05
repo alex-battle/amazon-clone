@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../images/slimshirt.jpg'
 
 function Main(){
     const openMenu = () => {
@@ -37,7 +38,7 @@ return(
                     <ul className="products">
                         <li>
                             <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -50,7 +51,7 @@ return(
                         </li>
                         <li>
                             <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -63,7 +64,7 @@ return(
                         </li>
                         <li>
                             <div className="product">
-                                <img className="product-image" src="alexzon-frontend/src/images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -76,20 +77,7 @@ return(
                         </li>
                         <li>
                             <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
-                                <div className="product-name">
-                                    <a href="product.html">
-                                    Slim Shirt
-                                    </a>
-                                </div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">$60</div>
-                                <div className="product-rating">4.5 stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>  
-                            <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -102,20 +90,7 @@ return(
                         </li>
                         <li>
                             <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
-                                <div className="product-name">
-                                    <a href="product.html"> 
-                                    Slim Shirt
-                                    </a>
-                                </div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">$60</div>
-                                <div className="product-rating">4.5 stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -128,7 +103,7 @@ return(
                         </li>
                         <li>
                             <div className="product">
-                                <img className="product-image" src="../images/slimshirt.jpg" alt=""/>
+                                <img className="product-image" src={img} />
                                 <div className="product-name">
                                     <a href="product.html">
                                     Slim Shirt
@@ -139,6 +114,34 @@ return(
                                 <div className="product-rating">4.5 stars(10 reviews)</div>
                             </div>
                         </li>
+                        <li>
+                            <div className="product">
+                                <img className="product-image" src={img} />
+                                <div className="product-name">
+                                    <a href="product.html">
+                                    Slim Shirt
+                                    </a>
+                                </div>
+                                <div className="product-brand">Nike</div>
+                                <div className="product-price">$60</div>
+                                <div className="product-rating">4.5 stars(10 reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="product">
+                                <img className="product-image" src={img} />
+                                <div className="product-name">
+                                    <a href="product.html">
+                                    Slim Shirt
+                                    </a>
+                                </div>
+                                <div className="product-brand">Nike</div>
+                                <div className="product-price">$60</div>
+                                <div className="product-rating">4.5 stars(10 reviews)</div>
+                            </div>
+                        </li>
+                        
+                        
                     </ul>
                 </div>
             </main>
