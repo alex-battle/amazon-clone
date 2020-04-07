@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../images/slimshirt.jpg'
-
+import data from '../data'
 function Main(){
     const openMenu = () => {
         document.querySelector('.sidebar').classList.add('open')
@@ -36,19 +36,24 @@ return(
             <main className="main">
                 <div className="content">
                     <ul className="products">
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src={img} />
-                                <div className="product-name">
-                                    <a href="product.html">
-                                    Slim Shirt
-                                    </a>
-                                </div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">$60</div>
-                                <div className="product-rating">4.5 stars(10 reviews)</div>
-                            </div>
-                        </li>
+                            {
+                                data.products.map(product => 
+                                    <li>
+                                        <div className="product">
+                                        <img className="product-image" src={product.image} />
+                                            <div className="product-name">
+                                                <a href="product.html">
+                                                    {product.name}
+                                                </a>
+                                            </div>
+                                            <div className="product-brand">{product.brand}</div>
+                                            <div className="product-price">${product.price}</div>
+                                            <div className="product-rating">{product.rating} stars({product.numReviews} reviews)</div>
+                                        </div>
+                                    </li>
+                                )
+                            }
+                        
                         
                     </ul>
                 </div>
