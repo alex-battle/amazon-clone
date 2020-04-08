@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../images/slimshirt.jpg'
-import data from '../data'
+// import data from '../data'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import HomeScreen from './HomeScreen'
 import ProductScreen from './ProductScreen'
