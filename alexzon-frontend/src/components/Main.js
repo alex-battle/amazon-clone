@@ -1,6 +1,10 @@
 import React from 'react';
 import img from '../images/slimshirt.jpg'
 import data from '../data'
+import {BrowserRouter, Route, Link} from 'react-router-dom'
+import HomeScreen from './HomeScreen'
+import ProductScreen from './ProductScreen'
+
 function Main(){
     const openMenu = () => {
         document.querySelector('.sidebar').classList.add('open')
@@ -9,6 +13,7 @@ function Main(){
         document.querySelector('.sidebar').classList.remove('open')
     }
 return(
+    <BrowserRouter>
     <div>
         <div className="grid-container">
             <header className="header">
@@ -16,7 +21,7 @@ return(
                     <button onClick={openMenu}>
                     &#9776;
                     </button>
-                    <a href="index.html">Alexzon</a>
+                    <Link to="/">Alexzon</Link>
                 </div>
                 <div className="header-links">
                     <a href="cart.html">Cart</a>
@@ -34,28 +39,10 @@ return(
                 </ul>
             </aside>
             <main className="main">
+                <Route path="/product/:id" component={ProductScreen} />
+                <Route path="/" exact={true} component={HomeScreen} />
                 <div className="content">
-                    <ul className="products">
-                            {
-                                data.products.map(product => 
-                                    <li>
-                                        <div className="product">
-                                        <img className="product-image" src={product.image} />
-                                            <div className="product-name">
-                                                <a href="product.html">
-                                                    {product.name}
-                                                </a>
-                                            </div>
-                                            <div className="product-brand">{product.brand}</div>
-                                            <div className="product-price">${product.price}</div>
-                                            <div className="product-rating">{product.rating} stars({product.numReviews} reviews)</div>
-                                        </div>
-                                    </li>
-                                )
-                            }
-                        
-                        
-                    </ul>
+                    
                 </div>
             </main>
             <footer className="footer">
@@ -63,6 +50,7 @@ return(
             </footer>
         </div>
     </div>
+    </BrowserRouter>
     )
 }
 export default Main;
