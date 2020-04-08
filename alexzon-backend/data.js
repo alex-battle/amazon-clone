@@ -1,7 +1,7 @@
 
 export default {
     products:[{
-        _id: 1,
+        _id: '1',
         name: 'Slim Shirt',
         category: 'Shirts',
         image: "",
@@ -12,7 +12,7 @@ export default {
         description: 'lorem ipsum blah blah blah'
     },
     {   
-        _id: 2,
+        _id: '2',
         name: 'Fit Shirt',
         category: 'Shirts',
         image: "",
@@ -23,7 +23,7 @@ export default {
         description: 'lorem ipsum blah blah blah'
     },
     {   
-        _id: 3,
+        _id: '3',
         name: 'Big Pant',
         category: 'Pants',
         image: "",
