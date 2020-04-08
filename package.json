@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "ecommerce application",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon --watch alexzon-backend --exec babel-node alexzon-backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-battle/amazon-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-battle/amazon-clone/issues"
+  },
+  "homepage": "https://github.com/alex-battle/amazon-clone#readme"
+}
