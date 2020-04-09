@@ -9,7 +9,8 @@ export default {
         brand: 'nike',
         rating: 4.5,
         numReviews: 10,
-        description: 'lorem ipsum blah blah blah'
+        description: 'lorem ipsum blah blah blah',
+        countInStock: 0,
     },
     {   
         _id: '2',
@@ -20,7 +21,8 @@ export default {
         brand: 'nike',
         rating: 4.0,
         numReviews: 10,  
-        description: 'lorem ipsum blah blah blah'
+        description: 'lorem ipsum blah blah blah',
+        countInStock: 13,
     },
     {   
         _id: '3',
@@ -31,7 +33,9 @@ export default {
         brand: 'nike',
         rating: 4.9,
         numReviews: 10,
-        description: 'lorem ipsum blah blah blah'
+        description: 'lorem ipsum blah blah blah',
+        countInStock: 5,
+
     }
 ]
 }
